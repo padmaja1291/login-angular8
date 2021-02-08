@@ -1,31 +1,28 @@
-.container {
-    padding-right: 15px;
-    background-color: #FFFFCC;
-}
 
 .login-container {
-    padding: 40px 0
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
-.login-container>form>hr {
-    border: 1px solid #ccc;
-    width: 85%
-}
+
 
 .form-signin {
-    max-width: 360px;
+    height: 400px;
+    width: 400px;
     padding: 15px;
     margin: 0 auto;
     border: 1px #ddd solid;
-    background: #FFFFFF
+    background: white
 }
 
-.form-signin .checkbox,
 .form-signin .form-signin-heading {
     margin-bottom: 10px
 }
 
-.form-signin .checkbox {
+.form-signin {
     font-weight: 400
 }
 

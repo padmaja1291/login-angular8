@@ -29,12 +29,12 @@ export class LoginComponent implements OnInit {
 // convenience getter for easy access to form fields
 get f() { return this.loginForm.controls; }
 
+
+//function is called on click of login button
 onSubmit() {
-  
-  console.log('on submit')
   this.submitted = true;
 
-  // stop here if form is invalid
+  //will stop execution if form is invalid
   if (this.loginForm.invalid) {
       return;
   }
@@ -48,8 +48,8 @@ onSubmit() {
       window.location.href = 'http://onecause.com';
   },
   error => {
-      console.log('error',error)
-      this.error = 'custom error';
+      console.log('error',error.error.message)
+      this.error = error.error.message;
       this.loading = false;
   }
   )
